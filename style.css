@@ -40,10 +40,11 @@ body {
 .logo {
 	color: white;
 	display: flex;
-	height: 4rem;
-	margin-left: 1.5rem;
-	width: 12rem;
-	background-image: url("./Bilder/Oslo_Kommune_Logo_Transparent_Hvit.png");
+	height: 6rem;
+	margin-left: 2rem;
+	width: 15rem;
+	margin-top: 1rem;
+	background-image: url("./Bilder/Første\ logo\ desgin\ DD\ Elvebakken_transparent.png");
 	background-size: contain;
 	background-repeat: no-repeat;
 }
@@ -62,7 +63,7 @@ body {
 .navbar ul li {
 	list-style-type: none;
 	display: inline-block;
-	padding: 0.625rem 1.25rem;
+	padding: 0.75rem 1.5rem;
 }
 
 .navbar ul li a {
