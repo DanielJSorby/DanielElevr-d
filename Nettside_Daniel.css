@@ -1,0 +1,30 @@
+.navbar {
+    font-family: 'OsloSans', sans-serif;
+    font-weight: 500;
+    height: 8.125rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    position: fixed;
+    transition: background-color 0.2s linear;
+    -webkit-text-stroke: 0.01875rem black;
+    z-index: 10000;
+}
+
+.logo {
+    color: white;
+    display: flex;
+    height: 8rem;
+    margin-left: 2rem;
+    width: 12rem;
+    background-image: url('./Bilder/Første\ logo\ desgin\ DD\ Elvebakken_transparent.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+body {
+    background-color: #6B5EA6;
+}   
