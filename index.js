@@ -20,6 +20,12 @@ $(document).ready(function () {
 	});
 });
 
+$(document).ready(function () {
+	setTimeout(function () {
+		$(window).scrollTop(0);
+	}, 200); // 200 millisekunder forsinkelse
+});
+
 /* Loading Screen */
 $(window).on("load", function () {
 	const loader = $("#loader");
