@@ -369,3 +369,10 @@ label {
     }
 }
 
+.Reklamevideo{
+	height: 75%;
+	width: 75%;
+	display: flex;
+    justify-content: center;
+}
+
