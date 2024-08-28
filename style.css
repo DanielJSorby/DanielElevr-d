@@ -80,7 +80,7 @@ body {
 }
 
 #navbar-logo .solid-nav {
-	background-image: url("./Bilder/Første\ logo\ desgin\ DD\ Elvebakken_transparent.png");
+	background-image: url("./Bilder/D\ design\ logo\ hot\ og\ bright\ pink.png");
 }
 
 .navbar ul li a::after {
@@ -384,4 +384,36 @@ label {
 	margin-bottom: 50px; /* Juster avstand mellom tekst og video */
 	text-align: center;
 	font-size: 24px; /* Endre størrelse på teksten etter behov */
+}
+
+/* Loader */
+.loader {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 5rem;
+}
+
+.loading-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.loading {
+	background-color: #001021;
+	width: 100vw;
+	height: 100vh;
+}
+
+.farget {
+	color: #ff1654; /* Sett fargen på de fargede bokstavene */
+}
+
+.gjennomsiktig {
+	color: transparent; /* Gjør de gjennomsiktige bokstavene usynlige */
 }
