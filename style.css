@@ -76,7 +76,7 @@ body {
 
 .solid-nav ul li a {
 	transition: 0.3s;
-	filter: drop-shadow(5px 5px 10px #000000);
+	text-shadow: 1px 1px 1px #000;
 }
 
 #navbar-logo .solid-nav {
@@ -107,10 +107,10 @@ body {
 }
 
 .rod {
-	color:#ff1654 !important;
+	color: #ff1654 !important;
 }
 .bla {
-	color:#6B5EA6 !important;
+	color: #6b5ea6 !important;
 }
 
 /* Hamburgernavbar CSS */
@@ -159,7 +159,7 @@ label .hamburger:before {
 	display: block;
 	width: 100%;
 	height: 100%;
-	background: #6B5EA6;
+	background: #6b5ea6;
 }
 
 label .hamburger:before {
@@ -271,6 +271,7 @@ label {
 	font-weight: 700;
 	font-style: normal;
 	float: bottom;
+	text-shadow: 2px 2px 2px #000;
 }
 
 .splash-content * {
@@ -285,95 +286,92 @@ label {
 	font-style: italic;
 }
 
-
 .nyheter {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 2rem, 3rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 2rem, 3rem;
 	background-image: linear-gradient(white, black);
 }
 
 .nyheter-boks {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
 }
-
 
 .stor-nyhet {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 1.5rem;	
-    padding: 1.5rem;
-    border-radius: 1.5rem;
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
-    width: 150%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 1.5rem;
+	padding: 1.5rem;
+	border-radius: 1.5rem;
+	box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+	width: 150%;
 }
 
-
 .nyhet-bilde {
-    width: 50%;
-    height: 50%;
-    border-radius: 1.5rem;
+	width: 50%;
+	height: 50%;
+	border-radius: 1.5rem;
 }
 
 .nyhet:hover {
-    transform: scale(1.05);
-    transition: .8s;
+	transform: scale(1.05);
+	transition: 0.8s;
 }
 
 .nyhet:hover::after {
-    content: 'Les mer';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    font-weight: 500;
-    transition: .3s;
-    border-radius: 1.5rem;
+	content: "Les mer";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 2rem;
+	font-weight: 500;
+	transition: 0.3s;
+	border-radius: 1.5rem;
 }
 
 @media screen and (max-width: 900px) {
-    .nyhet-header {
-        font-size: 1.5rem;
-    }
+	.nyhet-header {
+		font-size: 1.5rem;
+	}
 
-    .nyhet-tekst {
-        font-size: 1rem;
-    }
-    .nyheter {
-        margin: 0;
-        margin-bottom: 2rem;
-    }
-    #nyheter-main-header {
-        padding-top: 2rem;
-    }
+	.nyhet-tekst {
+		font-size: 1rem;
+	}
+	.nyheter {
+		margin: 0;
+		margin-bottom: 2rem;
+	}
+	#nyheter-main-header {
+		padding-top: 2rem;
+	}
 }
 
 @media screen and (max-width: 500px) {
-    .nyhet-tekst {
-        font-size: .7rem;
-    }
+	.nyhet-tekst {
+		font-size: 0.7rem;
+	}
 }
 
 .video-container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100vh; 
+	height: 100vh;
 }
 .Reklamevideo {
 	max-width: 76%;
@@ -386,5 +384,4 @@ label {
 	margin-bottom: 50px; /* Juster avstand mellom tekst og video */
 	text-align: center;
 	font-size: 24px; /* Endre størrelse på teksten etter behov */
-
 }
