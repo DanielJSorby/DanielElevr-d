@@ -7,7 +7,7 @@
 }
 
 body {
-	background-color: #6b5ea6;
+	background-color: #ff1654;
 	font-family: "poppins", sans-serif;
 	font-weight: 400;
 	font-style: normal;
@@ -17,7 +17,7 @@ body {
 .navbar {
 	font-family: "OsloSans", sans-serif;
 	font-weight: 500;
-	height: 5rem;
+	height: fit-content;
 	width: 100%;
 	display: flex;
 	flex-direction: row;
@@ -44,6 +44,7 @@ body {
 	margin-left: 2rem;
 	width: 15rem;
 	margin-top: 1rem;
+	margin-bottom: 1rem;
 	background-image: url("./Bilder/Første\ logo\ desgin\ DD\ Elvebakken_transparent.png");
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -74,8 +75,8 @@ body {
 }
 
 .solid-nav ul li a {
-	color: #ff1654;
 	transition: 0.3s;
+	filter: drop-shadow(5px 5px 10px #000000);
 }
 
 #navbar-logo .solid-nav {
@@ -103,6 +104,13 @@ body {
 .navbar ul li a:hover {
 	color: white;
 	transition: 0.3s;
+}
+
+.rod {
+	color:#ff1654 !important;
+}
+.bla {
+	color:#6B5EA6 !important;
 }
 
 /* Hamburgernavbar CSS */
@@ -151,7 +159,7 @@ label .hamburger:before {
 	display: block;
 	width: 100%;
 	height: 100%;
-	background: #ff1654;
+	background: #6B5EA6;
 }
 
 label .hamburger:before {
@@ -210,7 +218,7 @@ label a {
 	text-decoration: none;
 	font-size: 1.875rem;
 	font-weight: 300;
-	color: #ff1654;
+	color: #6B5EA6(229 9% 0%);
 }
 
 .hamburger {
@@ -271,6 +279,7 @@ label {
 
 #familie {
 	color: #ff1654;
+	filter: drop-shadow(5px 5px 10px #000000);
 	rotate: -7deg;
 	font-weight: 600;
 	font-style: italic;
@@ -282,7 +291,8 @@ label {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 1.5rem 5rem;
+    margin: 2rem, 3rem;
+	background-image: linear-gradient(white, black);
 }
 
 .nyheter-boks {
@@ -300,19 +310,17 @@ label {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 1.5rem;
-	background-color: black;
-    background-image: linear-gradient(white,black);
+    margin: 1.5rem;	
     padding: 1.5rem;
     border-radius: 1.5rem;
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
-    width: 100%;
+    width: 150%;
 }
 
 
 .nyhet-bilde {
     width: 50%;
-    height: 100%;
+    height: 50%;
     border-radius: 1.5rem;
 }
 
