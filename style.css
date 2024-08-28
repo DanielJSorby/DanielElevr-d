@@ -369,10 +369,22 @@ label {
     }
 }
 
-.Reklamevideo{
-	height: 75%;
-	width: 75%;
+.video-container {
 	display: flex;
-    justify-content: center;
+	justify-content: center;
+	align-items: center;
+	height: 100vh; 
+}
+.Reklamevideo {
+	max-width: 76%;
+	max-height: 75%;
 }
 
+.video-tekst {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px; /* Juster avstand mellom tekst og video */
+	text-align: center;
+	font-size: 24px; /* Endre størrelse på teksten etter behov */
+
+}
