@@ -20,12 +20,6 @@ $(document).ready(function () {
 	});
 });
 
-$(document).ready(function () {
-	setTimeout(function () {
-		$(window).scrollTop(0);
-	}, 200); // 200 millisekunder forsinkelse
-});
-
 /* Loading Screen */
 $(window).on("load", function () {
 	const loader = $("#loader");
@@ -39,6 +33,13 @@ $(window).on("load", function () {
 	}
 
 	loader.html(output);
+
+	// Sørg for at vinduet starter på toppen når siden lastes
+	$(window).scrollTop(0);
+	window.scrollTo({
+		top: 0,
+		behavior: "smooth",
+	});
 
 	let index = 0;
 	const interval = setInterval(() => {
