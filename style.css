@@ -286,40 +286,35 @@ label {
 	font-style: italic;
 }
 
+/* Daniel med gradient bakgrunn */
 .nyheter {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	justify-content: center ;
 	margin: 2rem, 3rem;
 	background-image: linear-gradient(white, black);
 }
 
-.nyheter-boks {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	flex-direction: row;
-}
 
 .stor-nyhet {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	align-items: center;
-	justify-content: center;
+	justify-content: right;
 	margin: 1.5rem;
 	padding: 1.5rem;
 	border-radius: 1.5rem;
 	box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
-	width: 150%;
+	width: 96.5%;
 }
 
 .nyhet-bilde {
-	width: 50%;
-	height: 50%;
-	border-radius: 1.5rem;
+	width: 75%;
+	height: 75%;
+	margin-right: 0;
+	margin-bottom: 1rem;
+	
 }
 
 .nyhet:hover {
@@ -378,13 +373,7 @@ label {
 	max-height: 75%;
 }
 
-.video-tekst {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 50px; /* Juster avstand mellom tekst og video */
-	text-align: center;
-	font-size: 24px; /* Endre størrelse på teksten etter behov */
-}
+
 
 /* Loader */
 .loader {

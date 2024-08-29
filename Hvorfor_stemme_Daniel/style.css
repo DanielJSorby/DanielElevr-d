@@ -1,0 +1,248 @@
+@import url("https://use.typekit.net/unj2jkk.css");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #ffffff;
+	font-family: "poppins", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+/* navbar CSS*/
+.navbar {
+	font-family: "OsloSans", sans-serif;
+	font-weight: 500;
+	height: fit-content;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 1.6rem;
+	position: fixed;
+	transition: background-color 0.2s linear;
+	-webkit-text-stroke: 0.01875rem black;
+	z-index: 10000;
+}
+
+.solid-nav {
+	background-color: #fff4ec;
+	transition: background-color 0.2s linear;
+	-webkit-text-stroke: 0rem black;
+	box-shadow: 0px 10px 12px 0px rgba(0, 0, 0, 0.55);
+}
+
+.logo {
+	color: white;
+	display: flex;
+	height: 6rem;
+	margin-left: 2rem;
+	width: 15rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	background-image: url("./Bilder/Første\ logo\ desgin\ DD\ Elvebakken_transparent.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+/* #navbar-logo {
+    background-image: url('./Bilder/Oslo_Kommune_Logo_Transparent_Hvit.png');
+    display: flex;
+    height: 4.5rem;
+    width: 12rem;
+    margin-left: 1.5rem;
+    z-index: 10;
+    background-size: contain;
+    background-repeat: no-repeat;
+} */
+
+.navbar ul li {
+	list-style-type: none;
+	display: inline-block;
+	padding: 0.75rem 1.5rem;
+}
+
+.navbar ul li a {
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+	position: relative;
+}
+
+.solid-nav ul li a {
+	transition: 0.3s;
+	text-shadow: 1px 1px 1px #000;
+}
+
+#navbar-logo .solid-nav {
+	background-image: url("./Bilder/D\ design\ logo\ hot\ og\ bright\ pink.png");
+}
+
+.navbar ul li a::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 0.3rem;
+	bottom: 0;
+	left: 0;
+	background-color: white;
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+}
+
+.navbar ul li a:hover::after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
+
+.navbar ul li a:hover {
+	color: white;
+	transition: 0.3s;
+}
+
+.rod {
+	color: #ff1654 !important;
+}
+.bla {
+	color: #6b5ea6 !important;
+}
+
+/* Hamburgernavbar CSS */
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+label .menu {
+	position: fixed;
+	right: -100px;
+	top: -100px;
+	z-index: 100;
+	width: 200px;
+	height: 200px;
+	background: #fff4ec;
+	border-radius: 50% 50% 50% 50%;
+	-webkit-transition: 0.5s ease-in-out;
+	transition: 0.5s ease-in-out;
+	box-shadow: 0 0 0 0 #fff4ec, 0 0 0 0 #fff4ec;
+	cursor: pointer;
+	box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+label .hamburger {
+	position: absolute;
+	top: 135px;
+	left: 50px;
+	width: 30px;
+	height: 2px;
+	background: #ff1654;
+	display: block;
+	-webkit-transform-origin: center;
+	transform-origin: center;
+	-webkit-transition: 0.5s ease-in-out;
+	transition: 0.5s ease-in-out;
+}
+
+label .hamburger:after,
+label .hamburger:before {
+	-webkit-transition: 0.5s ease-in-out;
+	transition: 0.5s ease-in-out;
+	content: "";
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: #6b5ea6;
+}
+
+label .hamburger:before {
+	top: -10px;
+}
+
+label .hamburger:after {
+	bottom: -10px;
+}
+
+label input {
+	display: none;
+}
+
+label input:checked + .menu {
+	box-shadow: 0 0 0 100vw #fff4ec, 0 0 0 100vh #fff4ec;
+	border-radius: 0;
+}
+
+label input:checked + .menu .hamburger {
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+label input:checked + .menu .hamburger:after {
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+	bottom: 0;
+}
+
+label input:checked + .menu .hamburger:before {
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+	top: 0;
+}
+
+label input:checked + .menu + ul {
+	opacity: 1;
+}
+
+label ul {
+	z-index: 200;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	-webkit-transition: 0.25s 0s ease-in-out;
+	transition: 0.25s 0s ease-in-out;
+}
+
+label a {
+	margin-bottom: 1em;
+	display: block;
+	text-decoration: none;
+	font-size: 1.875rem;
+	font-weight: 300;
+	color: #6B5EA6(229 9% 0%);
+}
+
+.hamburger {
+	display: none;
+}
+label .menu {
+	display: none;
+}
+label {
+	display: none;
+}
+
+@media screen and (max-width: 1000px) {
+	.navbar {
+		display: none;
+	}
+
+	.hamburger {
+		display: block;
+	}
+	label .menu {
+		display: block;
+	}
+	label {
+		display: block;
+	}
+}
