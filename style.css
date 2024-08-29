@@ -329,79 +329,29 @@ label {
 }
 
 /* Daniel med gradient bakgrunn */
-.nyheter {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	margin: 2rem, 3rem;
+.Daniel-en-familie{
+	background-color: #6B5EA6;
 	background-image: linear-gradient(white, black);
-}
-
-.stor-nyhet {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: right;
-	margin: 1.5rem;
-	padding: 1.5rem;
-	border-radius: 1.5rem;
-	box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
-	width: 96.5%;
-}
-
-.nyhet-bilde {
-	width: 75%;
-	height: 75%;
-	margin-right: 0;
-	margin-bottom: 1rem;
-}
-
-.nyhet:hover {
-	transform: scale(1.05);
-	transition: 0.8s;
-}
-
-.nyhet:hover::after {
-	content: "Les mer";
-	position: absolute;
-	bottom: 0;
-	left: 0;
 	width: 100%;
+	height: 90vh;
+
+}
+
+.Daniel-en-familie-bilde img{
 	height: 100%;
-	background-color: rgba(255, 255, 255, 0.5);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-size: 2rem;
-	font-weight: 500;
-	transition: 0.3s;
-	border-radius: 1.5rem;
+	width: 100%;
+	margin-top: -13.5rem;	
+	margin-left: 35rem;
 }
 
-@media screen and (max-width: 900px) {
-	.nyhet-header {
-		font-size: 1.5rem;
-	}
-
-	.nyhet-tekst {
-		font-size: 1rem;
-	}
-	.nyheter {
-		margin: 0;
-		margin-bottom: 2rem;
-	}
-	#nyheter-main-header {
-		padding-top: 2rem;
-	}
+.Daniel-en-familie-tekst {
+	margin-left: 2.5rem;
+	margin-top: -30rem;
+	font-size: 64px;
+	color: white;
 }
 
-@media screen and (max-width: 500px) {
-	.nyhet-tekst {
-		font-size: 0.7rem;
-	}
-}
-
+/* video */	
 .video-container {
 	display: flex;
 	justify-content: center;
