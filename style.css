@@ -329,16 +329,52 @@ label {
 }
 
 /* Daniel med gradient bakgrunn */
+
 .Daniel-en-familie {
+	height: 100vh;
+	display: flex;
+	background-image: linear-gradient(white, black);
+	justify-content: space-between;
+	font-size: 5vw;
+	color: white;
+	position: relative;
+}
+
+@media screen and (max-width: 800px) {
+	.Daniel-en-familie .Daniel-en-familie-tekst {
+		text-align: center;
+		align-self: center;
+		justify-self: center;
+	}
+
+	.Daniel-en-familie {
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.Daniel-en-familie .Daniel-en-familie-tekst {
+		position: absolute;
+	}
+}
+
+#Daniel-en-familie-bilde {
+	height: 100%;
+}
+
+.Daniel-en-familie-tekst {
+	align-self: flex-end;
+}
+
+/* .Daniel-en-familie {
 	background-color: #6b5ea6;
 	background-image: linear-gradient(white, black);
-	width: 100%;
+	width: 100vw;
 	height: 90vh;
 }
 
 .Daniel-en-familie-bilde img {
-	height: 100%;
-	width: 100%;
+	height: 90vh;
 	margin-top: -13.5rem;
 	margin-left: 35rem;
 }
@@ -348,7 +384,7 @@ label {
 	margin-top: -30rem;
 	font-size: 64px;
 	color: white;
-}
+} */
 
 /* video */
 .video-container {
