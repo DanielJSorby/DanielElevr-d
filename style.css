@@ -257,7 +257,7 @@ label {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
-	padding: 20vh;
+	align-items: center;
 }
 
 .splash-content {
@@ -272,15 +272,53 @@ label {
 	font-style: normal;
 	float: bottom;
 	text-shadow: 2px 2px 2px #000;
+	width: 40vw;
+	padding-bottom: 20vh;
 }
 
-.splash-content * {
+@media screen and (max-width: 500px) {
+	.splash-content h1 {
+		font-size: 11vw;
+		min-width: 10px;
+		margin: calc(10vw * -1);
+	}
+
+	#splash-svg {
+		width: 60vw;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.splash-content h1 {
+		font-size: 12vw;
+		min-width: 10px;
+		margin: calc(4vw * -1) !important;
+	}
+
+	#splash-svg {
+		width: 80vw;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.splash-content h1 {
+		font-size: 13vw;
+		min-width: 10px;
+		margin: calc(5vw * -1) !important;
+	}
+
+	#splash-svg {
+		width: 80vw;
+	}
+}
+
+.splash-content h1 {
 	margin: -20px;
 }
 
 #familie {
 	color: #ff1654;
-	filter: drop-shadow(5px 5px 10px #000000);
+	filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
 	rotate: -7deg;
 	font-weight: 600;
 	font-style: italic;
