@@ -20,12 +20,6 @@ $(document).ready(function () {
 	});
 });
 
-$(document).ready(function () {
-	setTimeout(function () {
-		$(window).scrollTop(0);
-	}, 200); // 200 millisekunder forsinkelse
-});
-
 /* Loading Screen */
 $(window).on("load", function () {
 	const loader = $("#loader");
@@ -55,6 +49,7 @@ $(window).on("load", function () {
 					.addClass("gjennomsiktig");
 			}
 		}
+		$(window).scrollTop(0);
 		index = (index + 1) % tekst.length;
 	}, fart);
 
