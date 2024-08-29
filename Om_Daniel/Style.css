@@ -1,0 +1,89 @@
+@import url("https://use.typekit.net/unj2jkk.css");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #ff1654;
+	font-family: "poppins", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+/* Presentasjon */
+.presentasjon{
+    display: flex;
+    position: relative;
+    text-align: center;
+    opacity: 100%;
+    color: #001021;
+}
+
+.presentasjon-tekst{
+    opacity: 50%;
+    font-size: 200px;
+    margin-left: 15rem;
+    margin-top: -9rem;
+}
+
+.presentasjon-bilde img{ 
+    height: 130%;
+    width: auto;
+    position: absolute;
+    margin-top: 4.85rem;
+    margin-left: -42.5rem;
+    opacity: 100%;
+
+}
+
+.presentasjon-info{
+    font-size: 16px;
+    margin-top: 25rem;
+    margin-left: -80rem;
+
+}
+
+/* Informasjons strippe */
+.info{
+    margin-top: 21.5rem;
+    background-color: white;
+}
+
+.Daniel-strip-data{
+    font-size: 3.2rem;
+    line-height: 3.4rem;
+    font-weight: 400;
+}
+
+.Daniel-strip-label{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #001021;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.Daniel-strip-info1{
+    margin-top: -6rem;
+}
+.Daniel-strip-info2{
+    margin-left: 30rem;
+    margin-top: -6rem;
+}
+
+.Daniel-strip-info3{
+    margin-left: 60rem;
+    margin-top: -6.55rem;
+}
+
+.Daniel-strip-info4{
+    margin-left: 90rem;
+    margin-top: -6.65rem;
+}
+
+
