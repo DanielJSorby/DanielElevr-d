@@ -200,6 +200,10 @@ label input:checked + .menu + ul {
 	opacity: 1;
 }
 
+label input:checked + .menu + ul a {
+	display: block;
+}
+
 label ul {
 	z-index: 200;
 	position: fixed;
@@ -214,7 +218,7 @@ label ul {
 
 label a {
 	margin-bottom: 1em;
-	display: block;
+	display: none;
 	text-decoration: none;
 	font-size: 1.875rem;
 	font-weight: 300;
