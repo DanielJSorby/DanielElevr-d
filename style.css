@@ -329,18 +329,17 @@ label {
 }
 
 /* Daniel med gradient bakgrunn */
-.Daniel-en-familie{
-	background-color: #6B5EA6;
+.Daniel-en-familie {
+	background-color: #6b5ea6;
 	background-image: linear-gradient(white, black);
 	width: 100%;
 	height: 90vh;
-
 }
 
-.Daniel-en-familie-bilde img{
+.Daniel-en-familie-bilde img {
 	height: 100%;
 	width: 100%;
-	margin-top: -13.5rem;	
+	margin-top: -13.5rem;
 	margin-left: 35rem;
 }
 
@@ -351,7 +350,7 @@ label {
 	color: white;
 }
 
-/* video */	
+/* video */
 .video-container {
 	display: flex;
 	justify-content: center;
