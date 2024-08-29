@@ -34,6 +34,13 @@ $(window).on("load", function () {
 
 	loader.html(output);
 
+	// Sørg for at vinduet starter på toppen når siden lastes
+	$(window).scrollTop(0);
+	window.scrollTo({
+		top: 0,
+		behavior: "smooth",
+	});
+
 	let index = 0;
 	const interval = setInterval(() => {
 		const chars = loader.find("span");
@@ -49,7 +56,6 @@ $(window).on("load", function () {
 					.addClass("gjennomsiktig");
 			}
 		}
-		$(window).scrollTop(0);
 		index = (index + 1) % tekst.length;
 	}, fart);
 
