@@ -331,7 +331,7 @@ label {
 /* Daniel med gradient bakgrunn */
 
 .Daniel-en-familie {
-	height: 100vh;
+	height: 90vh;
 	display: flex;
 	background-image: linear-gradient(white, black);
 	justify-content: space-between;
