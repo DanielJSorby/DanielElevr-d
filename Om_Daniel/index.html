@@ -1,48 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Om Daniel - Daniel Sørby</title>
-    <link rel="stylesheet" href ="Style.css" />
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Om Daniel - Daniel Sørby</title>
+		<link rel="stylesheet" href="Style.css" />
+		<link rel="stylesheet" href="/style.css" />
+	</head>
+	<body>
+		<nav>
+			<div class="navbar w-full">
+				<a href="/">
+					<div id="logo" class="logo navbar-logo"></div>
+				</a>
+				<ul class="navbar_lenker">
+					<li>
+						<a
+							href="/Hvorfor_stemme_Daniel/index.html"
+							id="navbar-hvorfor-stemme-Daniel"
+							class="rod"
+							>Hvorfor stemme på Daniel?</a
+						>
+					</li>
+					<li>
+						<a
+							href="/Våre_saker/index.html"
+							id="navbar-våre-saker"
+							class="bla"
+							>Våre saker</a
+						>
+					</li>
+					<li>
+						<a
+							href="/Om_Daniel/index.html"
+							id="navbar-om-daniel"
+							class="rod"
+							>Om Daniel</a
+						>
+					</li>
+				</ul>
+			</div>
+			<label id="hamburger">
+				<input type="checkbox" />
+				<span class="menu"> <span class="hamburger"></span> </span>
+				<ul class="navbar_lenker">
+					<li>
+						<a
+							href="/"
+							style="
+								color: #2b2854;
+								text-decoration: underline;
+								text-decoration-thickness: 0.3rem;
+								text-underline-offset: 0.45rem;
+							"
+							>Hjem</a
+						>
+					</li>
+					<li>
+						<a
+							href="/Hvorfor_stemme_Daniel/index.html"
+							id="navbar-hvorfor-stemme-daniel"
+							>Hvorfor stemme Daniel?</a
+						>
+					</li>
+					<li>
+						<a href="/Våre_saker/index.html" id="navbar-våre-saker"
+							>Våre saker</a
+						>
+					</li>
+					<li>
+						<a href="/Om_Daniel/index.html" id="navbar-om-daniel"
+							>Om Daniel</a
+						>
+					</li>
+				</ul>
+			</label>
+		</nav>
+		<div class="presentasjon">
+			<div class="presentasjon-tekst">
+				<h1>Sørby</h1>
+			</div>
+			<div class="presentasjon-bilde">
+				<img src="./Om daniel.png" alt="om daniel" />
+			</div>
 
-</head>
-<body>
-    <div class="presentasjon">
-        <div class="presentasjon-tekst">
-            <h1> Sørby</h1>
-        </div>
-        <div class="presentasjon-bilde">
-            <img src="./Om daniel.png" alt="om daniel">
-        </div>
-            
-        <div class="presentasjon-info">
-            <h1>Elevråds representant i barneskolen</h1>
-            <h1>Elevråds representant på ungdomskolen</h1>
-            <h1>Tidligere representant av 1IMST-A</h1>
-        </div>
-    </div>
+			<div class="presentasjon-info">
+				<h1>Elevråds representant i barneskolen</h1>
+				<h1>Elevråds representant på ungdomskolen</h1>
+				<h1>Tidligere representant av 1IMST-A</h1>
+			</div>
+		</div>
 
+		<div class="info">
+			<div class="Daniel-strip-info1">
+				<div class="Daniel-strip-label">Fødtselsdato</div>
+				<div class="Daniel-strip-data">07.04.2007</div>
+			</div>
+			<div class="Daniel-strip-info2">
+				<div class="Daniel-strip-label">Fødtselssted</div>
+				<div class="Daniel-strip-data">Oslo</div>
+			</div>
+			<div class="Daniel-strip-info3">
+				<div class="Daniel-strip-label">Vekt</div>
+				<div class="Daniel-strip-data">82KG</div>
+			</div>
+			<div class="Daniel-strip-info4">
+				<div class="Daniel-strip-label">Høyde</div>
+				<div class="Daniel-strip-data">189cm</div>
+			</div>
+		</div>
+		<script src="/jquery-3.7.1.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				$(window).scroll(function () {
+					var scrollTop = $(window).scrollTop();
+					if (scrollTop >= 1) {
+						$(".navbar").addClass("solid-nav");
 
-    <div class="info">
-        <div class="Daniel-strip-info1">
-            <div class="Daniel-strip-label">Fødtselsdato</div>
-            <div class="Daniel-strip-data">07.04.2007</div>
-        </div>
-        <div class="Daniel-strip-info2">
-            <div class="Daniel-strip-label">Fødtselssted</div>
-            <div class="Daniel-strip-data">Oslo</div>
-        </div>
-        <div class="Daniel-strip-info3">
-            <div class="Daniel-strip-label">Vekt</div>
-            <div class="Daniel-strip-data">82KG</div>
-        </div>
-        <div class="Daniel-strip-info4">
-            <div class="Daniel-strip-label">Høyde</div>
-            <div class="Daniel-strip-data">189cm</div>
-        </div>
-        
-    </div>
+						document.getElementById("logo").style.backgroundImage =
+							"url('/Bilder/Første logo desgin DD Elvebakken_transparent.png')";
+						console.log("solid-nav");
+						//$('#navbar-logo').attr('src', './Bilder/Oslo\ Kommune\ Logo\ Transparent\ Hvit.png'); // Endre til solidt bilde når .navbar har .solid-nav
+					} else {
+						$(".navbar").removeClass("solid-nav");
+						console.log("no-solid-nav");
+						document.getElementById("logo").style.backgroundImage =
+							"url('/Bilder/Første logo desgin DD Elvebakken_transparent.png')";
 
-</body>
+						//$('#navbar-logo').attr('src', './Bilder/Oslo\ Kommune\ Logo\ Transparent.png'); // Endre tilbake til originalt bilde når .navbar ikke har .solid-nav
+					}
+				});
+			});
+
+			/* Loading Screen */
+			$(window).on("load", function () {
+				const loader = $("#loader");
+				const tekst = "Stem Daniel";
+				const fargetBokstaver = 5;
+				const fart = 100; // Definerer farten. 1000 er ett sekund.
+
+				let output = "";
+				for (let i = 0; i < tekst.length; i++) {
+					output += `<span class="gjennomsiktig">${tekst[i]}</span>`;
+				}
+
+				loader.html(output);
+
+				// Sørg for at vinduet starter på toppen når siden lastes
+				$(window).scrollTop(0);
+				window.scrollTo({
+					top: 0,
+					behavior: "smooth",
+				});
+
+				let index = 0;
+				const interval = setInterval(() => {
+					const chars = loader.find("span");
+					for (let i = 0; i < chars.length; i++) {
+						const modIndex = (index + i) % tekst.length;
+						if (i < fargetBokstaver) {
+							$(chars[modIndex])
+								.removeClass("gjennomsiktig")
+								.addClass("farget");
+						} else {
+							$(chars[modIndex])
+								.removeClass("farget")
+								.addClass("gjennomsiktig");
+						}
+					}
+					index = (index + 1) % tekst.length;
+				}, fart);
+
+				// Fader ut hele lasteskjermen gradvis etter å ha scroll ned til #splash
+				setTimeout(function () {
+					// Ruller ned til element med ID 'splash'
+					$("html, body").animate(
+						{
+							scrollTop: $("#splash").offset().top,
+						},
+						500,
+						function () {
+							// Varighet på 1000ms (1 sekund)
+							// Når scroll-animasjonen er ferdig, fader vi ut lasteskjermen
+							$(".loading").fadeOut(0, function () {
+								// Varighet på 1500ms (1.5 sekunder)
+								$(this).remove(); // Fjerner hele lasteskjerm-elementet etter fadeOut
+							});
+						}
+					);
+				}, 5000); // Juster varigheten til ønsket tid
+			});
+		</script>
+	</body>
 </html>
