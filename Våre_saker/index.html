@@ -1,31 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
-    <title>Våre saker - Daniel Sørby</title>
-</head>
-<body>
-    <div class="nyheter" id="nyheter">
-        <h1 class="main-header" id="nyheter-main-header">Våre saker</h1>
-        <div class="nyheter-boks">
-            <div class="stor-nyhet nyhet" id="nyhet1">
-                <img src="./Stipend.webp" alt="Ute i Oslo med masse snø" class="bilde nyhet-bilde">
-                <h2 class="nyhet-header">Økning av stipend</h2>
-                <p class="nyhet-tekst">Daniel har flere ganger i fjor klagd til ledelsen over hvor lite penger IM fikk. Ledelsen sa gjentatte ganger til han at det ikke var mulig. Han fortsatte å klage og fikk til slutt satt opp stipenden med 300kr.</p>
-            </div>
-            <div class="liten-nyhet nyhet" id="nyhet2">
-                <img src="./Dansk flagg.jpg" alt="3 trær på grønn bakgrunn" class="bilde nyhet-bilde">
-                <h2 class="nyhet-header">Tur til Danmark</h2>
-                <p class="nyhet-tekst">Daniel har vært i møte med ledeslsen, og når han fikk vite om at skolen hadde fått ekstra penger. Han kom med flere innspill på hva man kan gjøre med de pengene og kom til enighet med ledelsen om en klassetur til Danmark</p>
-            </div>
-            <div class="liten-nyhet nyhet" id="nyhet3">
-                <img src="./Møte med ledelsen.avif" alt="3 trær på grønn bakgrunn" class="bilde nyhet-bilde">
-                <h2 class="nyhet-header">Møte med ledelsen</h2>
-                <p class="nyhet-tekst">Daniel har i fjor vært med i flere møter med ledelsen, for å så komme med innspill på hvordan han og ledelsen kan gjøre IM til et bedre sted</p>
-            </div>
-        </div>
-    </div>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Våre saker - Daniel Sørby</title>
+	</head>
+	<body>
+		<nav>
+			<div class="navbar w-full">
+				<a href="/">
+					<div id="logo" class="logo navbar-logo"></div>
+				</a>
+				<ul class="navbar_lenker">
+					<li>
+						<a
+							href="/Hvorfor_stemme_Daniel/index.html"
+							id="navbar-hvorfor-stemme-Daniel"
+							class="rod"
+							>Hvorfor stemme på Daniel?</a
+						>
+					</li>
+					<li>
+						<a
+							href="/Våre_saker/index.html"
+							id="navbar-våre-saker"
+							class="bla"
+							>Våre saker</a
+						>
+					</li>
+					<li>
+						<a
+							href="/Om_Daniel/index.html"
+							id="navbar-om-daniel"
+							class="rod"
+							>Om Daniel</a
+						>
+					</li>
+				</ul>
+			</div>
+			<label id="hamburger">
+				<input type="checkbox" />
+				<span class="menu"> <span class="hamburger"></span> </span>
+				<ul class="navbar_lenker">
+					<li>
+						<a
+							href="/"
+							style="
+								color: #2b2854;
+								text-decoration: underline;
+								text-decoration-thickness: 0.3rem;
+								text-underline-offset: 0.45rem;
+							"
+							>Hjem</a
+						>
+					</li>
+					<li>
+						<a
+							href="/Hvorfor_stemme_Daniel/index.html"
+							id="navbar-hvorfor-stemme-daniel"
+							>Hvorfor stemme Daniel?</a
+						>
+					</li>
+					<li>
+						<a href="/Våre_saker/index.html" id="navbar-våre-saker"
+							>Våre saker</a
+						>
+					</li>
+					<li>
+						<a href="/Om_Daniel/index.html" id="navbar-om-daniel"
+							>Om Daniel</a
+						>
+					</li>
+				</ul>
+			</label>
+		</nav>
+		<div class="nyheter" id="nyheter">
+			<h1 class="main-header" id="nyheter-main-header">Våre saker</h1>
+			<div class="nyheter-boks">
+				<div class="stor-nyhet nyhet" id="nyhet1">
+					<img
+						src="./Stipend.webp"
+						alt="Ute i Oslo med masse snø"
+						class="bilde nyhet-bilde"
+					/>
+					<h2 class="nyhet-header">Økning av stipend</h2>
+					<p class="nyhet-tekst">
+						Daniel har flere ganger i fjor klagd til ledelsen over
+						hvor lite penger IM fikk. Ledelsen sa gjentatte ganger
+						til han at det ikke var mulig. Han fortsatte å klage og
+						fikk til slutt satt opp stipenden med 300kr.
+					</p>
+				</div>
+				<div class="liten-nyhet nyhet" id="nyhet2">
+					<img
+						src="./Dansk flagg.jpg"
+						alt="3 trær på grønn bakgrunn"
+						class="bilde nyhet-bilde"
+					/>
+					<h2 class="nyhet-header">Tur til Danmark</h2>
+					<p class="nyhet-tekst">
+						Daniel har vært i møte med ledeslsen, og når han fikk
+						vite om at skolen hadde fått ekstra penger. Han kom med
+						flere innspill på hva man kan gjøre med de pengene og
+						kom til enighet med ledelsen om en klassetur til Danmark
+					</p>
+				</div>
+				<div class="liten-nyhet nyhet" id="nyhet3">
+					<img
+						src="./Møte med ledelsen.avif"
+						alt="3 trær på grønn bakgrunn"
+						class="bilde nyhet-bilde"
+					/>
+					<h2 class="nyhet-header">Møte med ledelsen</h2>
+					<p class="nyhet-tekst">
+						Daniel har i fjor vært med i flere møter med ledelsen,
+						for å så komme med innspill på hvordan han og ledelsen
+						kan gjøre IM til et bedre sted
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
